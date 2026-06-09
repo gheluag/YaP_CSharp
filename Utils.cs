@@ -105,6 +105,44 @@ namespace YAP_CSharp
                     PrintTask(4);
                     Lab3.Task6();
                     break;
+                case 4:
+                    PrintLab(4);
+                    PrintTask(1);
+                    Lab4.Task1();
+
+                    PrintTask(2);
+                    Lab4.Task2();
+
+                    PrintTask(3);
+                    Lab4.Task3();
+
+                    PrintTask(4);
+                    Lab4.Task4();
+
+                    PrintTask(5);
+                    Lab4.Task5();
+
+                    PrintTask(6);
+                    Lab4.Task6();
+                    break;
+
+                case 5:
+                    PrintLab(5);
+                    PrintTask(1);
+                    Lab5.Task1();
+
+                    PrintTask(2);
+                    Lab5.Task2();
+                    break;
+
+                case 6:
+                    PrintLab(6);
+                    PrintTask(1);
+                    Lab6.Task1();
+
+                    PrintTask(2);
+                    Lab6.Task2();
+                    break;
             }
         }
 

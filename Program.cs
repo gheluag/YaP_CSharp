@@ -12,7 +12,7 @@ while (true)
     Console.WriteLine("\n***Лабораторные работы***");
     Console.WriteLine("1. ввод-вывод\n2. условия" +
         "\n3. циклы\n4.массивы" +
-        "\n5.\n6." +
+        "\n5. структуры\n6. указатели" +
         "\n0. выход");
     Console.Write("введите номер лабораторной работы: ");
     choice = int.Parse(Console.ReadLine());

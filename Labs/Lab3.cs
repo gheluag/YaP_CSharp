@@ -70,7 +70,36 @@ namespace YAP_CSharp.Labs
         }
         public static void Task4()
         {
+            Console.Write("Введите текст: ");
+            string text = Console.ReadLine().ToLower();
 
+            Console.Write("Введите сдвиг N: ");
+            int n = int.Parse(Console.ReadLine());
+
+            string alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+
+            string result = "";
+
+            foreach (char c in text)
+            {
+                int index = alphabet.IndexOf(c);
+
+                if (index == -1)
+                    result += c;
+                
+                else
+                {
+                    int newIndex = (index + n) % alphabet.Length;
+
+                    if (newIndex < 0)
+                        newIndex += alphabet.Length;
+
+                    result += alphabet[newIndex];
+                }
+            }
+
+            Console.WriteLine("Закодированный текст:");
+            Console.WriteLine(result);
         }
         public static void Task5()
         {
